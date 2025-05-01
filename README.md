@@ -28,6 +28,22 @@ To change the activation key combination of PowerToys Run, one can use for examp
 ```
 where code 134 is `F23`, see https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes.
 
-## knwon limits
+### for Command Palette
+
+Change it by editing `~\AppData\Local\Packages\Microsoft.CommandPalette_8wekyb3d8bbwe\LocalState`
+
+```json
+  "Hotkey": {
+    "win": true,
+    "ctrl": false,
+    "alt": false,
+    "shift": false,
+    "code": 134,
+    "key": ""
+  },
+```
+
+
+## known limits
 
 For this to work when a window of admin access is activated (e.g. Task manager), this program must run as administrator (hence PowerToys when applied).
